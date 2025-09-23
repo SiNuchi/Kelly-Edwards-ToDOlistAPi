@@ -21,15 +21,15 @@ const TodoList = () => {
   useEffect(() => {
     loadUser();
   }, []);
-  const addTask = async (Event) => {
-    if (Event.key === ("enter" && newTask.trim() !== "")) {
+  const addTask = async (event) => {
+    if (event.key === "Enter" && newTask.trim() !== "") {
       const newTaskObject = { label: newTask, is_done: false };
       const resp = await fetch(
         "https://playground.4geeks.com/todo/todos/Sinuchi",
         {
           method: "post",
           headers: { "content-type": "application/json" },
-          body: JSON.stringfy(newTaskObject),
+          body: JSON.stringify(newTaskObject),
         }
       );
       const data = await resp.json();
@@ -59,16 +59,16 @@ const TodoList = () => {
         onKeyDown={addTask}
         className="task-input"
       />
-      <ul className="task.list">
+      <ul className="task-list">
         {task.length === 0 ? (
           <li className="no-task">Add Task</li>
         ) : (
           task.map((task, index) => (
-            <li key={index} className="task.item">
+            <li key={index} className="task-item">
               {task.label}{" "}
               <button
                 className="delete-button"
-                onclick={() => deleteTask(task.id)}
+                onClick={() => deleteTask(task.id)}
               >
                 X
               </button>
