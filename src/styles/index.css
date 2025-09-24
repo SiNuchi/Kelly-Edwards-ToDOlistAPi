@@ -1,61 +1,54 @@
-/* 
-
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
-
-*/
-/* 
-
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
 
 */
 body {
   margin-top: 100px;
+  background-color: rgb(33, 31, 31);
+
 }
 ul {
-  margin-bottom: o;
+  margin-bottom: 0;
   padding: 0;
 }
 ul li {
   font-size: large;
   font-weight: lighter;
   box-shadow: 3px 1px 2px;
-  color: grey;
+  color: rgb(255, 255, 255);
   height: 75px;
   border: 1px solid grey;
   list-style: none;
   padding: 20px;
+  border-radius: 50px;
+  width: 100%;
 }
 h1 {
   text-align: center;
+  color: white;
 }
 input {
   width: 100%;
   font-size: xx-large;
   font-weight: lighter;
   box-shadow: 3px 1px 2px;
-  color: grey;
+  background-color: rgb(119, 117, 117);
+  color: rgb(255, 253, 253);
   height: 90px;
   border: 1px solid grey;
+  border-radius: 50px;
   list-style: none;
   padding: 20px;
 }
 .delete-button{
     position: fixed;
-    right: 15%;
+    right: 25%;
 
 }
 ::placeholder{
-  color:red
+  color:rgb(253, 254, 255)
+}
+.container{
+float: none;
+width: 60%;
+margin: 0 auto;
+
 }
