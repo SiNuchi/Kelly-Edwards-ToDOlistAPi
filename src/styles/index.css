@@ -1,14 +1,14 @@
-
-*/
-body {
+ body {
   margin-top: 100px;
-  background-color: rgb(33, 31, 31);
+  background-color: rgb(30, 28, 28);
 
 }
+
 ul {
   margin-bottom: 0;
   padding: 0;
 }
+
 ul li {
   font-size: large;
   font-weight: lighter;
@@ -21,10 +21,12 @@ ul li {
   border-radius: 50px;
   width: 100%;
 }
+
 h1 {
   text-align: center;
   color: white;
 }
+
 input {
   width: 100%;
   font-size: xx-large;
@@ -38,17 +40,20 @@ input {
   list-style: none;
   padding: 20px;
 }
-.delete-button{
-    position: fixed;
-    right: 25%;
+
+.delete-button {
+  position: fixed;
+  right: 25%;
 
 }
-::placeholder{
-  color:rgb(253, 254, 255)
+
+::placeholder {
+  color: rgb(253, 254, 255)
 }
-.container{
-float: none;
-width: 60%;
-margin: 0 auto;
+
+.container {
+  float: none;
+  width: 60%;
+  margin: 0 auto;
 
 }
